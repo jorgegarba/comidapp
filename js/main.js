@@ -60,6 +60,8 @@ window.onload = () => {
                     var uid = user.uid;
                     var providerData = user.providerData;
                     console.log(uid);
+                    console.log(user);
+                    
                     $("#btnCerrarSesion").removeAttr("hidden");
                     $("#btnIniciarSesion").attr("hidden",true);
                     
