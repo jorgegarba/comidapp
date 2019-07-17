@@ -40,14 +40,44 @@
             </div>
         </nav>
     </header>
-    
+    <main class="container">
+
+        <div class="row mt-3">
+            <form autocomplete="off" class="col-md-6">
+                <div class="form-group ">
+                    <label for="inputEmail">Email:</label>
+                    <input type="text" id="inputEmail" name="inputEmail" class="form-control"
+                        placeholder="Ejm: jgarnica@gmail.com">
+                </div>
+                <div class="form-group ">
+                    <label for="inputPassword">Password:</label>
+                    <input type="password" id="inputPassword" name="inputPassword" class="form-control"
+                        placeholder="Indique su password">
+                </div>
+                <button type="submit" class="btn btn-primary col-md-6" id="btnIniciarSesion" hidden>
+                    Iniciar Sesion
+                </button>
+                <button type="submit" class="btn btn-danger col-md-6" id="btnCerrarSesion" hidden>
+                    Cerrar Sesion
+                </button>
+                <button type="submit" class="btn btn-primary col-md-6" id="btnIniciarSesionGoogle">
+                    Iniciar Sesion con Google
+                </button>
+            </form>
+        </div>
+
+    </main>
+
 
 
 
 
     <!-- Script minimo necesario para usar FIREBASE -->
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
-    
+    <!-- Firebase auth -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -57,7 +87,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnZzdYNu8q7TN9PdX5XEmbJ2TIHYMC8cI"></script>
     <script src="./js/notify.js"></script>
-    <script type="module" src="./js/main.js" ></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
